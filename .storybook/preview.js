@@ -1,3 +1,6 @@
+// @ts-check
+
+// @ts-ignore
 import { theme } from "@/pages/_app.tsx";
 
 export const parameters = {

@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  ignorePatterns:   ["/out", "/.next", "/node_modules"],
   parserOptions: {
     ecmaVersion: 8,
     sourceType: "module",
@@ -7,7 +8,7 @@ module.exports = {
       jsx: true
     }
   },
-  env: {
+  env:    {
     browser: true,
     node: true
   },
@@ -15,6 +16,9 @@ module.exports = {
     "next/core-web-vitals",
     "eslint:recommended",
     "plugin:import/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:react/recommended",
   ],
   parser: "@typescript-eslint/parser",
   rules: {
@@ -33,6 +37,12 @@ module.exports = {
     semi: [
       2,
       "always"
+    ],
+    "no-multi-spaces": [
+      2
+    ],
+    "no-multiple-empty-lines": [
+      2
     ],
     "object-curly-spacing": [
       "error",

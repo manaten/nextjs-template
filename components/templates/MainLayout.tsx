@@ -11,7 +11,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children, ...props }) =>
     <Header>
       Header
     </Header>
-    <Box as="main" w="container.md" maxW="100%" p={4} flexGrow={1}>
+    <Box as="main" w="container.md" maxW="100%" p={8} flexGrow={1}>
       {children}
     </Box>
     <Footer>

@@ -10,7 +10,8 @@
     "build-storybook": "build-storybook",
     "typecheck": "tsc --noEmit",
     "prepare": "husky install",
-    "lint-staged": "lint-staged -c .lintstagedrc"
+    "lint-staged": "lint-staged -c .lintstagedrc",
+    "fix": "eslint --fix ./**/*.{js,jsx,ts,tsx}"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.3.2",
@@ -32,9 +33,11 @@
     "@storybook/manager-webpack5": "^6.5.12",
     "@storybook/react": "^6.5.12",
     "@storybook/testing-library": "^0.0.13",
+    "@svgr/webpack": "^6.3.1",
     "@types/node": "18.7.18",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "babel-loader": "^8.2.5",
     "eclint": "^2.1.0",
